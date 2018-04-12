@@ -4,7 +4,7 @@ class Database{
 
     protected static $connection="";
     protected $username="root";
-    protected $password="ritubitu7";
+    protected $password="password";
     protected $server="localhost";
     protected $database="tourcafe";
 
