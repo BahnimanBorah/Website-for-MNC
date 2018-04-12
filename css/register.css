@@ -1,0 +1,42 @@
+body{
+    background-image: url(images/tourcafe.jpg);
+    background-size: calc(100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+#RegIDCheck{
+    font-size: 18px;
+    color: white; font-family: calibri;
+    margin-top: 50px; padding: 20px;
+    width: 600px; min-height: 80px;
+    margin: auto; text-align: center;
+    background-color: rgb(100, 149, 237, 0.6);
+}
+a:link,a:visited{
+    text-decoration: none;
+    color: white;display: inline-block;
+    text-align: center;
+}
+a:hover,a:active{
+    color: gray;
+}
+div#editForm{
+    margin: auto; margin-top: 50px;
+    width: 800px; height: 300px; margin-bottom: 100px;
+    background-color: rgb(100, 149, 237, 0.6); padding: 12px;
+    display: none;
+}
+div#labels,div#editFields{
+    margin:30px 0px 0px 100px;
+    float: left;
+    min-width: 100px;
+    font-family: calibri;
+    font-size: 18px;
+}
+.inputButtons{
+    margin: 10px;
+}
+.inputFields{
+    width: 200px;
+}
