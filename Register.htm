@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function checkID(){
+            if(document.getElementById('regID').value=='121212'){
+                var element = document.getElementById('editForm');
+                element.style.display='block';
+                alert("Registration ID valid ! Please fill the form.");
+            }else{
+                alert("Sorry Registrations ID invalid !");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="height:80px;margin-left: calc((100% - 180px)/2);font-family:calibri">
+        <a href="home.htm" style="text-decoration:none"><h1><em>Tour Cafe</em><i class="fa fa-coffee"></i><i class="fa fa-book"></i></h1></a>
+    </div>
+    <div id="RegIDCheck">
+        Employee Registration ID: <input type="text" id="regID" class="inputFields"><br>
+        <input type="button" value="Check" onclick="checkID()" class="inputButtons">
+    </div>
+    <div id="editForm">
+        <div id="labels">
+            <label>Name</label>:<br>
+            <label>Email ID</label>:<br>
+            <label>Phone</label>:<br>
+            <label>Date Of Birth</label>:<br>
+            <label>Address</label>:<br>
+            <label>Country</label>:<br>
+            <label>Username</label>:<br>
+            <label>Password</label>:<br>
+        </div>
+        <div id="editFields">
+            <form action="register.php" method="post" id="editing">
+                <input type="text" name="name" class="inputFields"><br>
+                <input type="text" name="email" class="inputFields"><br>
+                <input type="text" name="phone" class="inputFields"><br>
+                <input type="text" name="dob" class="inputFields" placeholder="[Format: DD/MM/YYYY]"><br>
+                <input type="text" name="address" class="inputFields"><br>
+                <input type="text" name="country" class="inputFields"><br>
+                <input type="text" name="username" class="inputFields"><br>
+                <input type="password" name="password" class="inputFields"><br>
+                <input type="submit" value="Register" class="inputButtons">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

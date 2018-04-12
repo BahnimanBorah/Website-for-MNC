@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ERP Portal</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/portal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function show(){
+                if(document.getElementById('check').checked){
+                    document.forms['logform']['password'].type='text';
+                }else{
+                    document.forms['logform']['password'].type='password';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="erpheader">
+            <a href="home.htm" style="text-decoration:none"><h1><em>Tour Cafe</em><i class="fa fa-coffee"></i><i class="fa fa-book"></i></h1></a>
+        </div>
+        <div id="loginbox">
+            <h2>LOGIN</h2>
+            <form action="verify.php" method="post" name="logform">
+                Username:<input type="text" name="username"><br>
+                Password:<input type="password" name="password"><br>
+                Show Password:<input type="checkbox" id="check" onclick="show()"><br>
+                <input type="submit" value="LOG IN">
+            </form>
+            <br><br>
+            New Employee Registration? <a href="Register.htm">Register!</a>
+        </div>
+    </body>
+</html>
