@@ -6,3 +6,5 @@ web pages. This project also focuses on working with PHP and PHPMyAdmin database
 Website containes an ERP portal for employees and admins to manage their work. CSS uses icons and image styling.
 
 PS - If any body happens to find any mistakes or errors then do notify me. Thank you.
+
+Here is the link for the Screenshots of the webpage: https://goo.gl/9VXRmi
