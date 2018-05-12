@@ -9,4 +9,4 @@ PHP : The PHP code I have used in this project maintains the modularity due to w
 
 PS - If any body happens to find any mistakes or errors then do notify me. Thank you.
 
-Here is the link for the Screenshots of the webpage: https://goo.gl/9VXRmi
+Here is the link for the Screenshots of the webpage: https://goo.gl/jCFcHF
