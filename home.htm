@@ -1,167 +1,195 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Tour Cafe</title>
     <link rel="stylesheet" href="css/cafe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <style>
-        .mySlides{
+        .img-responsive mySlides{
             display: none;
         }
     </style>
 </head>
 <body>
     <!--navigation bar-->
-    <div class="topNavigation">
-        <div class="topNavButtons">
-                <a href="#">HOME</a>
-        </div>
-        <div class="topNavButtons">
-                <a href="#gallery">GALLERY</a>
-        </div>
-        <div class="topNavButtons">
-                <a href="#about">ABOUT US</a>
-        </div>
-        <div class="topNavButtons">
-                <a href="#contactInfo">CONTACT US <i class="fa fa-envelope"></i></a>
-        </div>
-        <div class="topNavButtons">
-                <h2 id="heading"><em>Tour Cafe</em> <i class="fa fa-coffee"></i><i class="fa fa-book"></i></h2>
-        </div>
-    </div>
-    </div>
-    <!--image slideshow-->
-    <div class="slideShow">
-        <div id="slideShowText">
-            <h4><em>It all starts with a cup of coffee.</em><i class="fa fa-heart" style="color:red"></i></h4></br>
-            <p>
-                Whether over a stimulating morning coffee,
-                a late afternoon latte or an after-dinner espresso,
-                we love real connections that lead to new starts,
-                new ideas or simply great chats.
-                Come, have a coffee with us! 
-            </p>
-        </div>
-        <div id="images">
-            <img class="mySlides" src="css/images/img1.jpg">
-            <img class="mySlides" src="css/images/img2.jpg">
-            <img class="mySlides" src="css/images/img3.jpg">
-        </div>
-        <div id="slideShowTextRight">
-            <p>
-                We love making new connections,
-                friendships, and relationships.
-                And we might be a little biased,
-                but we think the best ones start with coffee!
-                And the best thing about real connections is 
-                they can lead to something amazing – to 
-                innovations and pioneering experiences that 
-                reshape the world we live in.
-            </p>
-        </div>
-    </div>
-    <script>
-        var myIndex = 0;
-        carousel();
+    <div class="container-fluid">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
         
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 5000);
-            }
-    </script>
-    <div id="about">
-        
-            <h1>IMAGINE A WORLD WITHOUT COFFEE</h1>            
-            <p>There’s probably nothing worse than waking up on a Monday morning to discover all the coffee is gone, right?
-                But what if there was no coffee ever again? From climate change to social problems…coffee culture and livelihoods are increasingly under threat.
-                TOUR CAFÉ is actively working to tackle these problems and secure the future of coffee, day after day.
-                In fact, ever since we started out in 1938, we’ve held a strong commitment – to grow our coffee respectfully. 
-                80 years on, we’ve invested more in sustainable coffee production that any other coffee brand.
-                Building positive relationships with those who produce and enjoy our coffee, with our communities and with our shared planet.
-                So that there never comes a day when there is no more coffee.
-                It all starts with a cup of Coffee.
-            </p><br><br>
-            <p>
-                TOUR CAFÉ has a special responsibility to ensure that everyone gets to enjoy great tasting, affordable coffee – today and tomorrow.
-                Our ambition is, and always has been, to grow our coffee respectfully - to protect its future for those who enjoy drinking it, 
-                and those who make a living producing it.
-                To turn this goal into reality we’ve teamed up with the Rainforest Alliance, the Sustainable Agriculture Network (SAN),
-                and the Common Code for the Coffee Community (4C) to ensure we are following internationally-recognised sustainability standards.
-                Across the board, NESCAFÉ is raising the standard of sustainable production at every stage of the coffee journey, from the coffee farm to the jar
-            </p>
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><em>Tour Cafe</em>&nbsp;<i class="fa fa-coffee"></i><i class="fa fa-book"></i></a>
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavBar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contactInfo"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
+                        </ul>
+                    </div>
+                
+            </nav>
+            <!--image slideshow-->
+            <div class="row slideShow">
+                <div class="col-lg-3">
+                    <div class="slideShowBoxes">
+                        <h4><em>It all starts with a cup of coffee.</em><i class="fa fa-heart" style="color:red"></i></h4></br>
+                        <p>
+                            Whether over a stimulating morning coffee,
+                            a late afternoon latte or an after-dinner espresso,
+                            we love real connections that lead to new starts,
+                            new ideas or simply great chats.
+                            Come, have a coffee with us!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    
+                        <img class="img-responsive mySlides" src="css/images/img1.jpg">
+                        <img class="img-responsive mySlides" src="css/images/img2.jpg">
+                        <img class="img-responsive mySlides" src="css/images/img3.jpg">
+                    
+                </div>
+                <div class="col-lg-3">
+                    <div class="slideShowBoxes">
+                        <p>
+                            We love making new connections,
+                            friendships, and relationships.
+                            And we might be a little biased,
+                            but we think the best ones start with coffee!
+                            And the best thing about real connections is 
+                            they can lead to something amazing – to 
+                            innovations and pioneering experiences that 
+                            reshape the world we live in.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("img-responsive mySlides");
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 5000);
+                    }
+            </script>
+            <div class="row about">
+                <div class="col-lg-12">
+                        <div>
+                            <h1>IMAGINE A WORLD WITHOUT COFFEE</h1>            
+                            <p>There’s probably nothing worse than waking up on a Monday morning to discover all the coffee is gone, right?
+                                But what if there was no coffee ever again? From climate change to social problems…coffee culture and livelihoods are increasingly under threat.
+                                TOUR CAFÉ is actively working to tackle these problems and secure the future of coffee, day after day.
+                                In fact, ever since we started out in 1938, we’ve held a strong commitment – to grow our coffee respectfully. 
+                                80 years on, we’ve invested more in sustainable coffee production that any other coffee brand.
+                                Building positive relationships with those who produce and enjoy our coffee, with our communities and with our shared planet.
+                                So that there never comes a day when there is no more coffee.
+                                It all starts with a cup of Coffee.
+                            </p><br><br>
+                            <p>
+                                TOUR CAFÉ has a special responsibility to ensure that everyone gets to enjoy great tasting, affordable coffee – today and tomorrow.
+                                Our ambition is, and always has been, to grow our coffee respectfully - to protect its future for those who enjoy drinking it, 
+                                and those who make a living producing it.
+                                To turn this goal into reality we’ve teamed up with the Rainforest Alliance, the Sustainable Agriculture Network (SAN),
+                                and the Common Code for the Coffee Community (4C) to ensure we are following internationally-recognised sustainability standards.
+                                Across the board, NESCAFÉ is raising the standard of sustainable production at every stage of the coffee journey, from the coffee farm to the jar
+                            </p>
+                        </div>
+                </div>
+            </div>
+            
+                <div class="row gallery">
+                    <div class="col-lg-3 col-xs-6"> 
+                        
+                            <img src="css/images/c1.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                            <div class="ImageCaption center-block"><p>Expresso</p></div>
+                        
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                        
+                            <img src="css/images/c2.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                            <div class="ImageCaption center-block"><p>Cripsy French Fries</p></div>
+                        
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                        
+                            <img src="css/images/c3.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                            <div class="ImageCaption center-block"><p>Hamburger Jumbo</p></div>
+                        
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                        
+                            <img src="css/images/c4.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                            <div class="ImageCaption center-block"><p>Capuchinho</p></div>
+                        
+                    </div>
+                </div>
+                <div class="row gallery">
+                    <div class="col-lg-3 col-xs-6">
+                        
+                            <img src="css/images/c5.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                            <div class="ImageCaption center-block"><p>Baked French Apple Tarts</p></div>
+                        
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            
+                                <img src="css/images/c6.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                                <div class="ImageCaption center-block"><p>Cuban Coco Fiesta</p></div>
+                            
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            
+                                <img src="css/images/c7.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                                <div class="ImageCaption center-block"><p>Cafe Latte</p></div>
+                            
+                    </div>
+                    <div class="col-lg-3 col-xs-6">
+                            
+                                <img src="css/images/c8.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                                <div class="ImageCaption center-block"><p>Colombian Cocoa</p></div>
+                            
+                    </div>
+                </div>
+            
+            <div class="row contactInfo">
+                <div class="col-lg-3">
+                    
+                        <h1>CONTACT</h1>
+                        <i class="fa fa-map-marker" style="width:30px"></i>London, England<br>
+                        <i class="fa fa-phone" style="width:30px"></i>+20-2511-2511<br>
+                        <i class="fa fa-envelope" style="width:30px"></i>Email:customers@tourcafe.uk<br>
+                    
+                </div>
+                <div class="col-lg-5">
+                        <div class="form-group row">
+                            <div class="col-xs-4">
+                                    <input class="form-control" type="text" placeholder="Name">
+                            </div>
+                            <div class="col-xs-8">
+                                    <input class="form-control" type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <input class="form-control" type="text" placeholder="Message"><br>
+                        <input class="btn btn-info" type="button" value="Send">
+                    
+                </div>
+            </div>
     </div>
-    <div id="gallery">
-        <div class="thumbnails">
-            <div> 
-                <img src="css/images/c1.jpg" alt="" class="images">
-                <div class="container"><p>Expresso</p></div>
-            </div>
-        </div>
-        <div class="thumbnails">
-            <div>
-                <img src="css/images/c2.jpg" alt="" class="images">
-                <div class="container"><p>Cripsy French Fries</p></div>
-            </div>
-        </div>
-        <div class="thumbnails">
-            <div>
-                <img src="css/images/c3.jpg" alt="" class="images">
-                <div class="container"><p>Hamburger Jumbo</p></div>
-            </div>
-        </div>
-        <div class="thumbnails">
-            <div>
-                <img src="css/images/c4.jpg" alt="" class="images">
-                <div class="container"><p>Capuchinho</p></div>
-            </div>
-        </div>
-        <div class="thumbnails_below">
-            <div>
-                <img src="css/images/c5.jpg" alt="" class="images">
-                <div class="container"><p>Baked French Apple Tarts</p></div>
-            </div>
-        </div>
-        <div class="thumbnails_below">
-            <div>
-                <img src="css/images/c6.jpg" alt="" class="images">
-                <div class="container"><p>Cuban Coco Fiesta</p></div>
-            </div>
-        </div>
-        <div class="thumbnails_below">
-            <div>
-                <img src="css/images/c7.jpg" alt="" class="images">
-                <div class="container"><p>Cafe Latte</p></div>
-            </div>
-        </div>
-        <div class="thumbnails_below">
-            <div>
-                <img src="css/images/c8.jpg" alt="" class="images">
-                <div class="container"><p>Colombian Cocoa</p></div>
-            </div>
-        </div>
-    </div>
-    <div id="contactInfo">
-        <div class="insideContact" style="margin-left:calc((100% - 680px)/2);float:left">
-            <h1>CONTACT</h1>
-            <i class="fa fa-map-marker" style="width:30px"></i>London, England<br>
-            <i class="fa fa-phone" style="width:30px"></i>+20-2511-2511<br>
-            <i class="fa fa-envelope" style="width:30px"></i>Email:customers@tourcafe.uk<br>
-        </div>
-        <div class="insideContact" style="float:left;margin-top:75px">
-            <input type="text" placeholder="Name">-<input type="text" placeholder="Email"><br>
-            <input type="text" placeholder="Message" style="width:300px"><br>
-            <input type="button" value="SEND" style="width:50px;height:30px;background-color:lightblue">
-        </div>
-        <a href="portal.htm" style="float:right"><i class="fa fa-person"></i>ERP Portal</a>
-    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
