@@ -4,110 +4,45 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: calc(100%);
+}
+h1,p{
     font-family: calibri;
 }
-.topNavigation{
-    position: fixed;
-    width: calc(100%);
-    z-index: 1; top: 0;
-    height: 50px; max-height: 50px; padding-bottom: 10px
-    background-color: rgb(128, 128, 128, 0.7);
-}
-.topNavButtons{
-    float: left;
-}
-#heading{
-    margin-left: 340px;
-    color: white;
-}
-a:link,a:visited{
-    background-color: rgb(128, 128, 128, 0.3); text-decoration: none;
-    color: black;display: inline-block;
-    text-align: center; padding: 12px 16px;
-}
-a:hover,a:active{
-    background-color: white;
-}
 .slideShow{
-    height: 600px;
-    width: 100%; padding-top: 100px;
+    margin:0; padding: 4%;
+    background-color: rgb(128, 128, 128, 0.6); font-size: 16px;
+}
+.slideShowBoxes{
+    margin:auto; margin-top: 30%;
+    color: white; width: 50%;
+    letter-spacing: 2px;
+}
+img.mySlides{
+    height: 400px;
+    width: 800px;
+}
+.about{
+    color: white; font-size: 16px;  letter-spacing: 2px;
+    text-align: center; padding: 5%; padding-top: 0;
     background-color: rgb(128, 128, 128, 0.6);
 }
-#slideShowText{
-    float: left; color: white;
-    width: 150px; letter-spacing: 2px;
-    margin-left: 50px;margin-top: 80px;
-}
-#images{
-    float: left;
-    margin-left: calc((100% - 1260px)/2);
-}
-#slideShowTextRight{
-    color: white;
-    float: left; text-decoration: italic;
-    width: 150px; letter-spacing: 2px;
-    margin-left: 50px;margin-top: 80px;
-}
-img{
-    margin: auto;
-    width: 900px;
-    height: 580px;
-}
-#contactInfo{
-    width: calc(100%);
-    height: 250px;
+.contactInfo{
     background-color: gray;
-    color: white; font-size: 18px;
+    color: white;
+    font-size: 16px; padding: 2% 0 2% 0;
 }
-.insideContact{
-    padding-left: 40px;
-    margin: auto;
-}
-input{
-    border: none;
-    border-bottom: 2px solid red;
-    padding-left: 10px; height: 30px;
-}
-input:last-of-type{
-    margin:10px 0px 0px 120px;
-    border-bottom: none;
-    border-radius: 5px;
-}
-#gallery{
-    width: 100%;
-    height: 700px;
+.gallery{
     background-color: lightgrey;
 }
 img.images{
-    margin: 6px; padding: 2px;
-    width: 300px;height: 200px; border-radius: 50px;
-}
-div.thumbnails{
-    margin-top: 50px;
-    width: 320px; margin-left: 50px; float: left;
-}
-div.insider{
-    padding: 2px;
-}
-div.thumbnails_below{
-    margin-top: 50px;
-    width: 320px; margin-left: 50px; float: left;
-}
-div.thumbnails_below:hover{
-    box-shadow: 0px 5px 5px 0px black;
-}
-div.thumbnails:hover{
-    box-shadow: 0px 5px 5px 0px black;
-}
-div.container{
+    width: 280px;height: 180px; border-radius: 50px;
     margin: auto;
-    color: black; text-align: center; width: 300px;
-    background-color: rgb(255, 255, 255 , 0.4);
 }
-div#about{
-    margin: auto; padding-top: 1px;
-    width: 100%; height: 400px;
-    color: white; font-size: 16px;  letter-spacing: 2px;
-    text-align: left; text-align: center;
-    background-color: rgb(128, 128, 128, 0.6);
+img.images:hover{
+    box-shadow: 0px 10px 10px 0px darkgray;
+}
+div.ImageCaption{
+    margin-top:2px;
+    color: white; text-align: center; width: inherit;
+    background-color: darkgray;
 }
