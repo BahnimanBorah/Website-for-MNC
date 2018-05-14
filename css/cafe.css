@@ -1,28 +1,47 @@
-body{
-    margin: 0;
-    background-image: url(images/homecafe.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: calc(100%);
+@media(max-width: 768px){
+    body{
+        margin: 0;
+        background-image: url(images/img9.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: calc(100%);
+    }
+    .slideShow{
+        padding: 4%;
+        font-size: 14px;
+        background-color: rgb(128, 128, 128, 0.6);
+    }
+}
+@media(min-width: 769px){
+    body{
+        margin: 0;
+        background-image: url(images/homecafe.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: calc(100%);
+    }
+    .slideShow{
+        padding: 4%;
+        font-size: 16px;
+        background-color: rgb(128, 128, 128, 0.6);
+    }
 }
 h1,p{
     font-family: calibri;
-}
-.slideShow{
-    margin:0; padding: 4%;
-    background-color: rgb(128, 128, 128, 0.6); font-size: 16px;
-}
-.slideShowBoxes{
-    margin:auto; margin-top: 30%;
-    color: white; width: 50%;
     letter-spacing: 2px;
 }
+.slideShowBoxes{
+    margin:auto; margin-top: 20%;
+    color: white; width: 50%;
+}
 img.mySlides{
-    height: 400px;
+    margin-top:10%; 
+    height: calc(50%);
     width: 800px;
+    box-shadow: 0px 5px 5px 0px rgba(128, 128, 128, 0.6);
 }
 .about{
-    color: white; font-size: 16px;  letter-spacing: 2px;
+    color: white; font-size: 16px;
     text-align: center; padding: 5%; padding-top: 0;
     background-color: rgb(128, 128, 128, 0.6);
 }
@@ -32,17 +51,23 @@ img.mySlides{
     font-size: 16px; padding: 2% 0 2% 0;
 }
 .gallery{
-    background-color: lightgrey;
+    padding-top: 2%; padding-bottom: 2%;
+    background-color: lightgray;
 }
-img.images{
-    width: 280px;height: 180px; border-radius: 50px;
-    margin: auto;
+@media(max-width: 768px){
+    img.images{
+        width: calc(90%);height: 120px; border-radius: 50px;
+    }
+}
+@media(min-width: 769px){
+    img.images{
+        width: calc(80%);height: 180px; border-radius: 50px;
+    }
 }
 img.images:hover{
-    box-shadow: 0px 10px 10px 0px darkgray;
+    box-shadow: 0px 15px 15px 0px darkgray;
 }
 div.ImageCaption{
-    margin-top:2px;
-    color: white; text-align: center; width: inherit;
-    background-color: darkgray;
+    margin-top:2px; text-shadow: 0 0 3px white;
+    color: white; text-align: center; width: calc(50%);
 }
