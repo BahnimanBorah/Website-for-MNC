@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>ERP Portal</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=deviblockstial-scale=1.0">
         <meta charset="UTF-8">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/portal.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script>
@@ -17,27 +18,42 @@
         </script>
     </head>
     <body>
-        <div class="row">
-            <div class="col-lg-12">
-                    <div class="blocks" id="erpheader">
-                            <a href="home.htm" style="text-decoration:none"><h1><em>Tour Cafe</em><i class="fa fa-coffee"></i><i class="fa fa-book"></i></h1></a>
-                    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                        <div class="blocks" id="erpheader">
+                                <a href="home.htm" style="color:white;text-decoration:none"><h1><em>Tour Cafe</em><i class="fa fa-coffee"></i><i class="fa fa-book"></i></h1></a>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                        <div class="blocks" id="loginbox">
+                                <h2>LOGIN</h2>
+                                <form class="form-horizontal" action="verify.php" method="post" name="logform">
+                                    <div class="form-group">
+                                        
+                                            <div class="col-xs-4 pull-left">
+                                                <label for="username" class="control-label">Username:</label>
+                                                <label for="name" class="control-label">Password:</label>
+                                                <label for="check" class="control-label">Show Password:</label>            
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <input class="form-control input-sm" type="text" name="username">
+                                                <input class="form-control input-sm" type="password" name="password">
+                                                <input class="checkbox" type="checkbox" id="check" onclick="show()">
+                                                <input class="form-control btn-success" style="width:100px" type="submit" value="LOG IN">
+                                            </div>
+                                            
+                                    </div>
+                                </form>
+                                <br><br>
+                                New Employee Registration? <a style="color:white;text-shadow:0 0 1px white" href="Register.htm">Register!</a>
+                        </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                    <div class="blocks" id="loginbox">
-                            <h2>LOGIN</h2>
-                            <form action="verify.php" method="post" name="logform">
-                                Username:<input type="text" name="username"><br>
-                                Password:<input type="password" name="password"><br>
-                                Show Password:<input type="checkbox" id="check" onclick="show()"><br>
-                                <input type="submit" value="LOG IN">
-                            </form>
-                            <br><br>
-                            New Employee Registration? <a href="Register.htm">Register!</a>
-                    </div>
-            </div>
-        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
