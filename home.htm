@@ -113,58 +113,64 @@
             </div>
             
                 <div class="row gallery" id="gallery">
-                    <div class="col-lg-3 col-xs-6"> 
+                    <div class="col-xs-6 col-lg-3"> 
                         
-                            <img src="css/images/c1.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                            <img src="css/images/c1.jpg" alt="Expresso" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
                             <div class="bg-primary ImageCaption center-block"><p>Expresso</p></div>
                         
                     </div>
-                    <div class="col-lg-3 col-xs-6">
+                    <div class="col-xs-6 col-lg-3">
                         
-                            <img src="css/images/c2.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                            <img src="css/images/c2.jpg" alt="Cripsy French Fries" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
                             <div class="bg-primary ImageCaption center-block"><p>Cripsy French Fries</p></div>
                         
                     </div>
-                    <div class="col-lg-3 col-xs-6">
+                    <div class="col-xs-6 col-lg-3">
                         
-                            <img src="css/images/c3.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                            <img src="css/images/c3.jpg" alt="Hamburger Jumbo" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
                             <div class="bg-primary ImageCaption center-block"><p>Hamburger Jumbo</p></div>
                         
                     </div>
-                    <div class="col-lg-3 col-xs-6">
+                    <div class="col-xs-6 col-lg-3">
                         
-                            <img src="css/images/c4.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                            <img src="css/images/c4.jpg" alt="Capuchinho" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
                             <div class="bg-primary ImageCaption center-block"><p>Capuchinho</p></div>
                         
                     </div>
                 </div>
                 <div class="row gallery">
-                    <div class="col-lg-3 col-xs-6">
+                    <div class="col-xs-6 col-lg-3">
                         
-                            <img src="css/images/c5.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                            <img src="css/images/c5.jpg" alt="French Apple Tarts" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
                             <div class="bg-primary ImageCaption center-block"><p>French Apple Tarts</p></div>
                         
                     </div>
-                    <div class="col-lg-3 col-xs-6">
+                    <div class="col-xs-6 col-lg-3">
                             
-                                <img src="css/images/c6.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                                <img src="css/images/c6.jpg" alt="Cuban Coco Fiesta" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
                                 <div class="bg-primary ImageCaption center-block"><p>Cuban Coco Fiesta</p></div>
                             
                     </div>
-                    <div class="col-lg-3 col-xs-6">
+                    <div class="col-xs-6 col-lg-3">
                             
-                                <img src="css/images/c7.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                                <img src="css/images/c7.jpg" alt="Cafe Latte" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
                                 <div class="bg-primary ImageCaption center-block"><p>Cafe Latte</p></div>
                             
                     </div>
-                    <div class="col-lg-3 col-xs-6">
+                    <div class="col-xs-6 col-lg-3">
                             
-                                <img src="css/images/c8.jpg" alt="" class="img-responsive img-thumbnail center-block images">
+                                <img src="css/images/c8.jpg" alt="Colombian Cocoa" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
                                 <div class="bg-primary ImageCaption center-block"><p>Colombian Cocoa</p></div>
-                            
                     </div>
                 </div>
-            
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span id="close" onclick="closeModal()">×</span>
+                    <img class="modal-content center-block" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+            <!--Contact section-->
             <div class="row contactInfo" id="contactInfo">
                 <div class="col-lg-3">
                     
@@ -177,19 +183,33 @@
                 <div class="col-lg-5">
                         <div class="form-group row">
                             <div class="col-xs-4">
-                                    <input class="form-control" type="text" placeholder="Name">
+                                    <input class="form-control input-sm" type="text" placeholder="Name">
                             </div>
                             <div class="col-xs-8">
-                                    <input class="form-control" type="text" placeholder="Email">
+                                    <input class="form-control input-sm" type="text" placeholder="Email">
                             </div>
                         </div>
-                        <input class="form-control" type="text" placeholder="Message"><br>
+                        <input class="form-control input-sm" type="text" placeholder="Message"><br>
                         <input class="btn btn-info" type="button" value="Send">
-                    
                 </div>
+                <div><i class="fa fa-info"></i>&nbsp;<a href="portal.htm">ERP portal</a></div>
             </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    function viewModal(source,alter){
+        var modal = document.getElementById('myModal');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        modal.style.display = "block";
+        modalImg.src = source;
+        captionText.innerHTML = alter;
+    }
+    function closeModal() { 
+        document.getElementById("myModal").style.display="none";
+    }
+    </script>
 </body>
 </html>
