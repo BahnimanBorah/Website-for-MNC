@@ -107,8 +107,8 @@ div.ImageCaption{
 #caption {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 80%;
+    width: auto;
+    max-width: auto;
     text-align: center;
     color: white;
     text-shadow: 0 0 5px lightblue;
