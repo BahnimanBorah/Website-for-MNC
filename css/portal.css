@@ -5,6 +5,9 @@
         background-repeat: no-repeat;
         background-size: calc(100%);
     }
+    .boxes{
+        width: calc(100% / 20%);
+    }
 }
 @media(min-width: 769px){
     body{
@@ -13,10 +16,14 @@
         background-repeat: no-repeat;
         background-size: calc(100%);
     }
+    .boxes{
+        width: calc(450px);
+    }
 }
 .boxes{
-    padding: 50px 10px 50px 10px;
-    width: 450px; min-height: 80px;
+    padding: 30px 15px 30px 15px;
+    border-radius: 5%;
+    min-height: calc(80px);
     text-align: center;margin:auto; margin-top: 100px;
     background-color: rgb(30, 144, 255, 0.5);
 }
