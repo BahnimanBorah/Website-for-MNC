@@ -2,43 +2,31 @@
 <html>
     <head>
         <title>ERP Portal</title>
-        <meta name="viewport" content="width=deviblockstial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta charset="UTF-8">
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/portal.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script>
-            function show(){
-                if(document.getElementById('check').checked){
-                    document.forms['logform']['password'].type='text';
-                }else{
-                    document.forms['logform']['password'].type='password';
-                }
-            }
-        </script>
+        <link rel="stylesheet" href="css/portal.css">
     </head>
     <body>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                        <div class="blocks" id="erpheader">
-                                <a href="home.htm" style="color:white;text-decoration:none"><h1><em>Tour Cafe</em><i class="fa fa-coffee"></i><i class="fa fa-book"></i></h1></a>
+                        <div class="boxes">
+                                <a href="home.htm"><h1><em>Tour Cafe</em><i class="fa fa-coffee"></i><i class="fa fa-book"></i></h1></a>
                         </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                        <div class="blocks" id="loginbox">
+
+                        <div class="boxes">
                                 <h2>LOGIN</h2>
                                 <form class="form-horizontal" action="verify.php" method="post" name="logform">
                                     <div class="form-group">
                                         
-                                            <div class="col-xs-4 pull-left">
+                                            <div class="col-xs-4 col-lg-4">
                                                 <label for="username" class="control-label">Username:</label>
                                                 <label for="name" class="control-label">Password:</label>
                                                 <label for="check" class="control-label">Show Password:</label>            
                                             </div>
-                                            <div class="col-xs-8">
+                                            <div class="col-xs-8 col-lg-8">
                                                 <input class="form-control input-sm" type="text" name="username">
                                                 <input class="form-control input-sm" type="password" name="password">
                                                 <input class="checkbox" type="checkbox" id="check" onclick="show()">
@@ -48,12 +36,21 @@
                                     </div>
                                 </form>
                                 <br><br>
-                                New Employee Registration? <a style="color:white;text-shadow:0 0 1px white" href="Register.htm">Register!</a>
+                                New Employee Registration? <a href="Register.htm">Register!</a>
                         </div>
                 </div>
             </div>
         </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function show(){
+            if(document.getElementById('check').checked){
+                document.forms['logform']['password'].type='text';
+            }else{
+                document.forms['logform']['password'].type='password';
+            }
+        }
+    </script>
     </body>
 </html>

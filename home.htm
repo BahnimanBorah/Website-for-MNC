@@ -6,12 +6,7 @@
     <title>Tour Cafe</title>
     <link rel="stylesheet" href="css/cafe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <style>
-        .img-responsive img-rounded mySlides{
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
     <!--navigation bar-->
@@ -71,22 +66,6 @@
                     </div>
                 </div>
             </div>
-            <script>
-                var myIndex = 0;
-                carousel();
-                
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("img-responsive img-rounded mySlides");
-                    for (i = 0; i < x.length; i++) {
-                       x[i].style.display = "none";  
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) {myIndex = 1}    
-                    x[myIndex-1].style.display = "block";  
-                    setTimeout(carousel, 5000);
-                    }
-            </script>
             <div class="row about" id="about">
                 <div class="col-lg-12">
                         <div>
@@ -115,25 +94,25 @@
                 <div class="row gallery" id="gallery">
                     <div class="col-xs-6 col-lg-3"> 
                         
-                            <img src="css/images/c1.jpg" alt="Expresso" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
+                            <img src="css/images/c1.jpg" alt="Expresso" class="img-responsive img-thumbnail center-block images">
                             <div class="bg-primary ImageCaption center-block"><p>Expresso</p></div>
                         
                     </div>
                     <div class="col-xs-6 col-lg-3">
                         
-                            <img src="css/images/c2.jpg" alt="Cripsy French Fries" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
+                            <img src="css/images/c2.jpg" alt="Cripsy French Fries" class="img-responsive img-thumbnail center-block images">
                             <div class="bg-primary ImageCaption center-block"><p>Cripsy French Fries</p></div>
                         
                     </div>
                     <div class="col-xs-6 col-lg-3">
                         
-                            <img src="css/images/c3.jpg" alt="Hamburger Jumbo" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
+                            <img src="css/images/c3.jpg" alt="Hamburger Jumbo" class="img-responsive img-thumbnail center-block images">
                             <div class="bg-primary ImageCaption center-block"><p>Hamburger Jumbo</p></div>
                         
                     </div>
                     <div class="col-xs-6 col-lg-3">
                         
-                            <img src="css/images/c4.jpg" alt="Capuchinho" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
+                            <img src="css/images/c4.jpg" alt="Capuchinho" class="img-responsive img-thumbnail center-block images">
                             <div class="bg-primary ImageCaption center-block"><p>Capuchinho</p></div>
                         
                     </div>
@@ -141,37 +120,37 @@
                 <div class="row gallery">
                     <div class="col-xs-6 col-lg-3">
                         
-                            <img src="css/images/c5.jpg" alt="French Apple Tarts" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
+                            <img src="css/images/c5.jpg" alt="French Apple Tarts" class="img-responsive img-thumbnail center-block images">
                             <div class="bg-primary ImageCaption center-block"><p>French Apple Tarts</p></div>
                         
                     </div>
                     <div class="col-xs-6 col-lg-3">
                             
-                                <img src="css/images/c6.jpg" alt="Cuban Coco Fiesta" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
+                                <img src="css/images/c6.jpg" alt="Cuban Coco Fiesta" class="img-responsive img-thumbnail center-block images">
                                 <div class="bg-primary ImageCaption center-block"><p>Cuban Coco Fiesta</p></div>
                             
                     </div>
                     <div class="col-xs-6 col-lg-3">
                             
-                                <img src="css/images/c7.jpg" alt="Cafe Latte" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
+                                <img src="css/images/c7.jpg" alt="Cafe Latte" class="img-responsive img-thumbnail center-block images">
                                 <div class="bg-primary ImageCaption center-block"><p>Cafe Latte</p></div>
                             
                     </div>
                     <div class="col-xs-6 col-lg-3">
                             
-                                <img src="css/images/c8.jpg" alt="Colombian Cocoa" class="img-responsive img-thumbnail center-block images" onclick="viewModal(this.src,this.alt)">
+                                <img src="css/images/c8.jpg" alt="Colombian Cocoa" class="img-responsive img-thumbnail center-block images">
                                 <div class="bg-primary ImageCaption center-block"><p>Colombian Cocoa</p></div>
                     </div>
                 </div>
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
-                    <span id="close" onclick="closeModal()">×</span>
+                    <span id="close">×</span>
                     <img class="modal-content center-block" id="img01">
                     <div id="caption"></div>
                 </div>
 
             <!--Contact section-->
-            <div class="row contactInfo" id="contactInfo">
+            <div class="row navbar-inverse contactInfo" id="contactInfo">
                 <div class="col-lg-3">
                     
                         <h1>CONTACT</h1>
@@ -195,21 +174,41 @@
                 <div><i class="fa fa-info"></i>&nbsp;<a href="portal.htm">ERP portal</a></div>
             </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
-    function viewModal(source,alter){
-        var modal = document.getElementById('myModal');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
+    
+        $(document).ready(function(){
 
-        modal.style.display = "block";
-        modalImg.src = source;
-        captionText.innerHTML = alter;
-    }
-    function closeModal() { 
-        document.getElementById("myModal").style.display="none";
-    }
+            /*image slide show*/
+            var currentImages = 0;
+            slideshow();                
+            function slideshow() {
+                var i;
+                var x = $(".mySlides");
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                currentImages++;
+                if (currentImages > x.length) {currentImages = 1}    
+                x[currentImages-1].style.display = "block";  
+                setTimeout(slideshow, 5000);
+            }
+
+            /*gallery image click*/
+            $("img.images").on("click",function(){
+                $("#myModal").toggle();
+                $("#img01").attr("src",$(this).attr("src"));
+                $("#caption").html($(this).attr("alt"));
+            });
+
+            /*gallery image close*/
+            $("#close").click(function(){
+                $("#myModal").toggle();
+            });    
+
+        });
+
     </script>
 </body>
 </html>

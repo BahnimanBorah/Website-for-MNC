@@ -50,10 +50,6 @@
         padding-top: 5%;
     }
 }
-.customNav{
-    background-color: rgb(128, 128, 128, 0.5);
-    color: white;
-}
 h1,p{
     font-family: calibri;
     letter-spacing: 2px;
@@ -74,13 +70,12 @@ img.mySlides{
     background-color: rgb(128, 128, 128, 0.6);
 }
 .contactInfo{
-    background-color: gray;
     color: white;
     padding: 2% 0 2% 0;
 }
 .gallery{
     padding-top: 2%; padding-bottom: 2%;
-    background-color: lightgray;
+    background-color: rgb(128, 128, 128, 0.6);
 }
 img.images:hover{
     box-shadow: 0px 15px 15px 0px darkgray;
@@ -127,7 +122,6 @@ div.ImageCaption{
     animation-name: zoom;
     animation-duration: 0.6s;
 }
-
 @-webkit-keyframes zoom {
     from {-webkit-transform: scale(0)} 
     to {-webkit-transform: scale(1)}
