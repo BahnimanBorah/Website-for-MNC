@@ -4,52 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        function checkID(){
-            if(document.getElementById('regID').value=='121212'){
-                var element = document.getElementById('editForm');
-                element.style.display='block';
-                alert("Registration ID valid ! Please fill the form.");
-            }else{
-                alert("Sorry Registrations ID invalid !");
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
-    <div style="height:80px;margin-left: calc((100% - 180px)/2);font-family:calibri">
-        <a href="home.htm" style="text-decoration:none"><h1><em>Tour Cafe</em><i class="fa fa-coffee"></i><i class="fa fa-book"></i></h1></a>
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-lg-12">
+                    <div class="boxes">
+                            <a href="home.htm" style="text-decoration:none"><h1><em>Tour Cafe</em><i class="fa fa-coffee"></i><i class="fa fa-book"></i></h1></a>
+                            <div class="form-inline">
+                                
+                                    <div class="form-group">
+                                            Employee Registration ID: <input type="text" id="regID" class="form-control">
+                                            <input type="button" value="Check" class="form-control btn-success inputButtons" id="checkbtn">
+                                    </div>
+                                
+                            </div>
+                        <div class="form-horizontal" style="display:none" id="hiddenBox">
+                            <div class="form-group">
+                                <div class="col-xs-4">
+                                        <label for="name" class="control-label">Name:</label><br/>
+                                        <label for="email" class="control-label">Email ID:</label><br/>
+                                        <label for="phone" class="control-label">Phone:</label><br/>
+                                        <label for="dob" class="control-label">Date Of Birth:</label><br/>
+                                        <label for="address" class="control-label">Address:</label><br/>
+                                        <label for="country" class="control-label">Country:</label><br/>
+                                        <label for="username" class="control-label">Username:</label><br/>
+                                        <label for="password" class="control-label">Password:</label><br/>
+                                </div>
+                                <div class="col-xs-8">
+                                        <form action="php/register.php" method="get" id="editing">
+                                            <input type="text" name="name" class="form-control">
+                                            <input type="text" name="email" class="form-control">
+                                            <input type="text" name="phone" class="form-control">
+                                            <input type="text" name="dob" class="form-control" placeholder="[Format: DD/MM/YYYY]">
+                                            <input type="text" name="address" class="form-control">
+                                            <input type="text" name="country" class="form-control">
+                                            <input type="text" name="username" class="form-control">
+                                            <input type="password" name="password" class="form-control">
+                                            <input type="submit" value="Register" class="form-control btn-success inputButtons">
+                                        </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
-    <div id="RegIDCheck">
-        Employee Registration ID: <input type="text" id="regID" class="inputFields"><br>
-        <input type="button" value="Check" onclick="checkID()" class="inputButtons">
-    </div>
-    <div id="editForm">
-        <div id="labels">
-            <label>Name</label>:<br>
-            <label>Email ID</label>:<br>
-            <label>Phone</label>:<br>
-            <label>Date Of Birth</label>:<br>
-            <label>Address</label>:<br>
-            <label>Country</label>:<br>
-            <label>Username</label>:<br>
-            <label>Password</label>:<br>
-        </div>
-        <div id="editFields">
-            <form action="register.php" method="post" id="editing">
-                <input type="text" name="name" class="inputFields"><br>
-                <input type="text" name="email" class="inputFields"><br>
-                <input type="text" name="phone" class="inputFields"><br>
-                <input type="text" name="dob" class="inputFields" placeholder="[Format: DD/MM/YYYY]"><br>
-                <input type="text" name="address" class="inputFields"><br>
-                <input type="text" name="country" class="inputFields"><br>
-                <input type="text" name="username" class="inputFields"><br>
-                <input type="password" name="password" class="inputFields"><br>
-                <input type="submit" value="Register" class="inputButtons">
-            </form>
-        </div>
-    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("#checkbtn").click(function(){
+                if($("#regID").val()=="121212"){
+                    alert("Registration ID valid ! Please fill the form.");
+                    $("#hiddenBox").slideToggle();
+                }else{
+                    alert("Sorry Registrations ID invalid !");
+                }
+            });
+        });
+
+    </script>
 </body>
 </html>
