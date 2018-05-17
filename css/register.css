@@ -29,7 +29,7 @@
     background-color: rgb(30, 144, 255, 0.5);
 }
 .form-group{margin-top: calc(2%);}
-.control-label{line-height: calc(27px);}
+.control-label{padding-top: calc(5px); padding-bottom: calc(5px);}
 a:link,a:visited{text-decoration: none;color: white;}
 a:hover,a{color: white;text-align: center;}
 
