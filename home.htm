@@ -201,6 +201,11 @@
                 $("#caption").html($(this).attr("alt"));
             });
 
+            $(document).keydown(function(e){
+                if(e.which=="27"){
+                    $("#myModal").hide();
+                }
+            });
             /*gallery image close*/
             $("#close").click(function(){
                 $("#myModal").toggle();
