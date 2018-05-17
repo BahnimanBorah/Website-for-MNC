@@ -24,7 +24,8 @@
     padding: 30px 15px 30px 15px;
     border-radius: 5%;
     min-height: calc(80px);
+    color: white;
     text-align: center;margin:auto; margin-top: 100px;
     background-color: rgb(30, 144, 255, 0.5);
 }
-a,a:visited{color: white;}a:hover{text-shadow: 1px green;color: white;text-shadow:0 0 1px white;text-decoration: none;} /*links*/
+a,a:visited{color: white;text-shadow:0 0 1px white;}a:hover{text-shadow: 1px green;color: white;text-shadow:0 0 3px white;text-decoration: none;} /*links*/
