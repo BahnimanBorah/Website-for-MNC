@@ -61,6 +61,7 @@ session_start();
                                                 }catch(Exception $e){echo "Error:".$e->getMessage();}
                                             ?>
                                 </div>
+                                <a class="btn btn-success center-block"  href="editprofile.php">Edit</a>
                             </div>
                             <div class="col-xs-12 col-lg-6 boxes">
                                         <div class="bg-info" id="userpanel">
