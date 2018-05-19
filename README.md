@@ -1,7 +1,4 @@
 # Website-for-MNC
-
-You can check out a working demo of this website at: https://BahnimanBorah.github.io
-
 Web Development Project. This repository contains the source files for a website project I made.
 
 I made this project as a web development project that focuses on working with Cascading Style Sheets for making more attractive
