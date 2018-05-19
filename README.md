@@ -8,4 +8,4 @@ PHP : The PHP code I have used in this project maintains the modularity due to w
 
 Project uses: HTML,CSS, JavaScript, JQuery and PHP
 
-You can check out a working demo of this project at: BahnimanBorah.github.io/Website-for-MNC
+You can check out a working demo of this project at: https://BahnimanBorah.github.io/Website-for-MNC
