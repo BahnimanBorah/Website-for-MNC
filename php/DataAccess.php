@@ -40,7 +40,7 @@ class Database{
             $statement->execute();
             $result = $statement->fetchAll(PDO::FETCH_NUM);
             $fields = array("Name","Phone No.","Date Of Birth","Address","Employee ID","Email ID","Position","Salary(Annual)","Bonus(Annual)","Total Income","Country");
-            echo "<table class='table table-hover table-responsive'><tr><th>Fields</th><th>User Information</th></tr>";
+            echo "<table class='table table-hover table-responsive table-bordered'><tr><th>Fields</th><th>User Information</th></tr>";
             for($i=0;$i<sizeof($result);$i++){
                 $field=0;
                 foreach($result[$i] as $key=>$value){

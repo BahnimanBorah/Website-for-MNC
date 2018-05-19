@@ -16,17 +16,17 @@
 }
 #companyData{
     margin-top: calc(100px); border-radius: 1%;
-    width: calc(80%);height: inherit;
-    text-align: center;
+    width: calc(80%);height: inherit; padding: calc(5px);
 }
 tr:hover{
     color: black; 
 }
-#userData{
-    margin-top: calc(50px); border-radius: 2%;
-    width: calc(40%); height: inherit;
+.boxes{
+    min-height: calc(300px); background-color: rgb(211, 211, 211, 0.5);
+    margin-top: calc(10px);
 }
-#userPanel{
-    width: inherit; height: inherit;
-    background-color: white;
+#userpanel{
+    width: calc(80%);
+    height: calc(300px); text-align: center;
+    margin-left: auto; margin-right: auto;
 }
