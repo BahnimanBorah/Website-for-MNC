@@ -36,7 +36,7 @@ session_start();
         <!--Company data table -->
         <div class="row">
             <div class="col-lg-12">
-                <div class="bg-info center-block" id="companyData">
+                <div class="bg-info center-block table-responsive" id="companyData">
 
                         <?php
                         include 'DataAccess.php';
@@ -53,7 +53,7 @@ session_start();
                     
 
                             <div class="col-xs-12 col-lg-6 boxes">
-                                <div class="bg-info">
+                                <div class="bg-info table-responsive">
                                             <?php
                                                 $user = $_SESSION['username'];
                                                 try{
