@@ -9,7 +9,7 @@
     .slideShow{
         padding: 4%;
         font-size: 14px;
-        background-color: rgb(128, 128, 128, 0.6);
+        
     }
     .about{
         font-size: 14px;
@@ -27,7 +27,7 @@
 @media(min-width: 769px){
     body{
         margin: 0;
-        background-image: url(images/homecafe.jpeg);
+        background-image: url(images/bg1.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: calc(100%);
@@ -35,7 +35,7 @@
     .slideShow{
         padding: 4%;
         font-size: 18px;
-        background-color: rgb(128, 128, 128, 0.6);
+        
     }
     .about{
         font-size: 16px;
@@ -67,7 +67,7 @@ img.mySlides{
 .about{
     color: white;
     text-align: center; padding: 5%; padding-top: 0;
-    background-color: rgb(128, 128, 128, 0.6);
+    
 }
 .contactInfo{
     color: white;
@@ -75,7 +75,7 @@ img.mySlides{
 }
 .gallery{
     padding-top: 2%; padding-bottom: 2%;
-    background-color: rgb(128, 128, 128, 0.6);
+    
 }
 img.images:hover{
     box-shadow: 0px 15px 15px 0px darkgray;
